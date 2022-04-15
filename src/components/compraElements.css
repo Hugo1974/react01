@@ -1,0 +1,39 @@
+/* .compraElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 5px 5px;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 10px 10px 0px 0px;
+  min-height: 200px;
+  height: 200px;
+} */
+
+.compraElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-items: center; */
+  width: 100%;
+  max-width: 600px;
+  margin: 5px 5px;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 10px 10px 0px 0px;
+  /* min-height: 300px; */
+  /* height: 200px; */
+  /* flex-wrap: nowrap; */
+  /* align-content: center; */
+  /* justify-content: flex-start; */
+}
+
+.Items {
+  display: flexbox;
+  flex-wrap: wrap;
+  width: 98%;
+  justify-self: left;
+}

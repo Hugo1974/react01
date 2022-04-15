@@ -1,0 +1,6 @@
+Ejemplo de creación de lista con div independientes.
+Cada componente div consta de 3 elementos ordenados con css:
+    una imagen
+    un texto
+    una entada de texto (importada de otro componente)
+    una imagen
