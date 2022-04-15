@@ -1,6 +1,7 @@
 import './compraElements.css';
 import CompraItem from './compraItem';
 import { nmcliStatus } from '../packages/funciones';
+import { creareStore } from 'redux';
 
 function CompraElements() {
   const nmcli_status = [
@@ -11,7 +12,11 @@ function CompraElements() {
   ];
 
   const rows = nmcliStatus(nmcli_status);
-  const listItems = rows.map((rowsmap, index) => <p>{rowsmap.device}</p>);
+  const listItems = rows.map((rowsmap, index) => (
+    <ul>
+      <li>{rowsmap.device}</li>
+    </ul>
+  ));
 
   console.log('MAP: ' + listItems);
 
