@@ -1,7 +1,13 @@
 import './compraElements.css';
-import CompraItem from './compraItem';
 import { nmcliStatus } from '../packages/funciones';
-import { creareStore } from 'redux';
+
+// import { useShell } from 'react-ssh2-hook';
+
+// const { initShell, stream } = useShell({
+//   // Pass an array of SSH2 ConnectConfig
+//   config: [{ host: 'localhost', username: 'devel', password: 'cmQ84G24' }],
+//   window: { term: 'xterm-256color' },
+// });
 
 function CompraElements() {
   const nmcli_status = [
