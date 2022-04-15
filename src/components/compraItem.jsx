@@ -9,8 +9,6 @@ function CompraItem({ status, nombre, entry, readonly }) {
   console.log('STATUS:' + status);
   console.log('ENTRY:' + entry);
 
-  let icon = FcHighPriority;
-
   function statusIcon(status) {
     console.log('statusIcon ' + status);
     if (status === 'True') {
