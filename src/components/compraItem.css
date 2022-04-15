@@ -22,10 +22,11 @@
   justify-self: left;
   /* cursor: pointer; */
 }
+
 .nombre {
-  flex: 0.2;
-  padding: 2px 2px 2px 2px;
-  justify-self: left;
+  /* flex: 0.2; */
+  padding: 2px 20px 2px 2px;
+  /* justify-self: left; */
 }
 
 .compraItemTextEntry {
