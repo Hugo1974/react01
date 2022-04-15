@@ -1,26 +1,31 @@
 import './compraElements.css';
 import CompraItem from './compraItem';
+import { nmcliStatus } from '../packages/funciones';
 
 function CompraElements() {
+  const nmcli_status = [
+    'wlo1:wifi:connected:Redmi 9',
+    'docker0:bridge:connected:docker0',
+    'eno1:ethernet:unavailable:',
+    'lo:loopback:unmanaged',
+  ];
+
+  const rows = nmcliStatus(nmcli_status);
+  const listItems = rows.map((rowsmap, index) => <p>{rowsmap.device}</p>);
+
+  console.log('MAP: ' + listItems);
+
   return (
     <div className='compraElements'>
       <span>Elemento de compra</span>
       <div className='Items'>
-        <CompraItem
+        {/* <CompraItem
           nombre='item 01'
           status='True'
           entry='True'
           readonly={true}
-        />
-        <CompraItem nombre='item 02' status='False' entry='False' />
-        <CompraItem nombre='item 03' status='True' entry='False' />
-        <CompraItem nombre='item 03' status='True' entry='False' />
-        <CompraItem
-          nombre='item 04'
-          status='False'
-          entry='True'
-          readonly={false}
-        />
+        /> */}
+        {listItems}
       </div>
     </div>
   );
