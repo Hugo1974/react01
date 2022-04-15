@@ -1,13 +1,6 @@
 import './compraElements.css';
 import { nmcliStatus } from '../packages/funciones';
-
-// import { useShell } from 'react-ssh2-hook';
-
-// const { initShell, stream } = useShell({
-//   // Pass an array of SSH2 ConnectConfig
-//   config: [{ host: 'localhost', username: 'devel', password: 'cmQ84G24' }],
-//   window: { term: 'xterm-256color' },
-// });
+import uuid from 'react-uuid';
 
 function CompraElements() {
   const nmcli_status = [
@@ -19,9 +12,7 @@ function CompraElements() {
 
   const rows = nmcliStatus(nmcli_status);
   const listItems = rows.map((rowsmap, index) => (
-    <ul>
-      <li>{rowsmap.device}</li>
-    </ul>
+    <li key={uuid()}>{rowsmap.device}</li>
   ));
 
   console.log('MAP: ' + listItems);
@@ -36,7 +27,7 @@ function CompraElements() {
           entry='True'
           readonly={true}
         /> */}
-        {listItems}
+        <ul>{listItems}</ul>
       </div>
     </div>
   );
