@@ -1,5 +1,3 @@
-import react from 'react';
-
 export function hola(texto) {
   console.log('Hola ' + texto);
 }
