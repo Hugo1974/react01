@@ -21,13 +21,6 @@ function CompraItem({ status, nombre, entry, readonly }) {
   function hasEntry(entry) {
     console.log('hasEntry ' + entry);
     if (entry === 'True') {
-      if (readonly === true) {
-        var ro = 'true';
-      } else {
-        var ro = 'false';
-      }
-      console.log('isReadOnly ' + readonly + ' ' + ro);
-
       return <CompraItemTextEntry readOnly={readonly} />;
     } else {
       return;
