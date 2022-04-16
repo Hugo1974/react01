@@ -1,31 +1,30 @@
-.compraElements {
-  display: ;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  /* width: 100%; */
-  /* max-width: 90em; */
-  margin: 5px 5px;
-  padding: 0.5rem;
-  border: 1px solid gray;
-  position: relative;
-  border-radius: 10px 10px 0px 0px;
+.divDeviceStatus {
+  display: table;
+  width: 95%;
+  padding: 5px;
+  table-layout: fixed;
+  max-inline-size: 450px;
 }
 
 .status {
   display: table-cell;
-  text-align: start;
 }
 
-.divDeviceStatus {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
+.titulo {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
 }
 
-/* .Items {
-  display: flexbox;
-  flex-wrap: wrap;
-  width: 98%;
-  justify-self: left;
-} */
+.cabecera {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-variant-alternates: historical-forms;
+  text-decoration: underline;
+  text-shadow: .5px .5px 2px #3b3b3b;
+
+}

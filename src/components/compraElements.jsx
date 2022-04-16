@@ -24,12 +24,12 @@ function CompraElements() {
 
   return (
     <>
-      <span>Elemento de compra</span>
+      <span className='titulo'>Estado de los dispositivos de red</span>
       <div key={uuid()} className='divDeviceStatus'>
-        <span className='device, status'>Dispositivo</span>
-        <span className='device, status'>Tipo</span>
-        <span className='device, status'>Estado</span>
-        <span className='device, status'>Conexión</span>
+        <span className='device, status, cabecera'>Dispositivo</span>
+        <span className='device, status cabecera'>Tipo</span>
+        <span className='device, status cabecera'>Estado</span>
+        <span className='device, status cabecera'>Conexión</span>
       </div>
       <div className='Items'>{listItems}</div>
     </>

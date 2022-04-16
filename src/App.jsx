@@ -19,7 +19,7 @@ function App() {
           <CompraElements />
         </TabPanel>
         <TabPanel>
-          <p>
+          <p className='divDeviceStatus'>
             <b>Mario</b> (<i>Japanese: マリオ Hepburn: Mario, [ma.ɾʲi.o]</i>) (
             <i>English: /ˈmɑːrioʊ/; Italian: [ˈmaːrjo]</i>) is a fictional
             character

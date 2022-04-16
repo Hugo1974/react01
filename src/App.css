@@ -1,21 +1,17 @@
 .App {
-    display: block;
-    flex-wrap: wrap;
-    min-width: 450px;
-    /* max-width: 100%; */
     position: absolute;
-    /* margin: 5px;
-    padding: 5px; */
-    /* border: 1px solid gray;
-    border-radius: 5px; */
+    margin: 10px;
+    padding: 5px;
+    min-width: 97%;
+    min-height: 400px;
+    height: 95%;
 }
 
+
+
 .tab {
-    display: block;
-    flex-wrap: wrap;
-    min-width: 450px;
-    /* max-width: 100%; */
-    position: relative;
+    min-width: 500px;
+    min-height: 100%;
     margin: 5px;
     padding: 5px;
     border: 1px solid gray;
