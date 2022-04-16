@@ -12,24 +12,27 @@ function CompraElements() {
 
   const rows = nmcliStatus(nmcli_status);
   const listItems = rows.map((rowsmap, index) => (
-    <li key={uuid()}>{rowsmap.device}</li>
+    <div key={uuid()} className='divDeviceStatus'>
+      <span className='device, status'>{rowsmap.device}</span>
+      <span className='type, status'>{rowsmap.type}</span>
+      <span className='state, status'>{rowsmap.state}</span>
+      <span className='conecction, status'>{rowsmap.connection}</span>
+    </div>
   ));
 
   console.log('MAP: ' + listItems);
 
   return (
-    <div className='compraElements'>
+    <>
       <span>Elemento de compra</span>
-      <div className='Items'>
-        {/* <CompraItem
-          nombre='item 01'
-          status='True'
-          entry='True'
-          readonly={true}
-        /> */}
-        <ul>{listItems}</ul>
+      <div key={uuid()} className='divDeviceStatus'>
+        <span className='device, status'>Dispositivo</span>
+        <span className='device, status'>Tipo</span>
+        <span className='device, status'>Estado</span>
+        <span className='device, status'>Conexión</span>
       </div>
-    </div>
+      <div className='Items'>{listItems}</div>
+    </>
   );
 }
 

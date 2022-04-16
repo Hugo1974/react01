@@ -1,18 +1,31 @@
 .compraElements {
-  display: flex;
+  display: ;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 600px;
+  position: fixed;
+  /* width: 100%; */
+  /* max-width: 90em; */
   margin: 5px 5px;
   padding: 0.5rem;
   border: 1px solid gray;
+  position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 
-.Items {
+.status {
+  display: table-cell;
+  text-align: start;
+}
+
+.divDeviceStatus {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* .Items {
   display: flexbox;
   flex-wrap: wrap;
   width: 98%;
   justify-self: left;
-}
+} */

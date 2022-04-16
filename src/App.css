@@ -1,0 +1,23 @@
+.App {
+    display: block;
+    flex-wrap: wrap;
+    min-width: 450px;
+    /* max-width: 100%; */
+    position: absolute;
+    /* margin: 5px;
+    padding: 5px; */
+    /* border: 1px solid gray;
+    border-radius: 5px; */
+}
+
+.tab {
+    display: block;
+    flex-wrap: wrap;
+    min-width: 450px;
+    /* max-width: 100%; */
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
