@@ -5,13 +5,16 @@
   /* justify-content: center; */
   /* width: 100%; */
   max-width: 90%;
+  min-width: 350px;
   margin: 5px 5px;
   padding: 0.5rem;
   border: 1px solid gray;
   border-radius: 10px 10px 0px 0px;
   /* flex-wrap: nowrap; */
   /* align-content: center; */
+  overflow-x: hidden;
 }
+
 .Items {
   display: block;
   flex-wrap: wrap;
